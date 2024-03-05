@@ -19,7 +19,7 @@ def load_text_image(numtext, len_text, textpath, text_list, use_mask=False):
         if use_mask:
             tmask_img = cv2.imread(OPJ(textpath, text_mask_list[picktext]))#[...,None].repeat(3, 2)
             text_img = np.where(tmask_img > 0, text_img, 0)
-        rands = np.random.uniform(0.7, 1.) if max(text_img.shape) > 800 else np.random.uniform(0.8, 1.)
+        rands = np.random.uniform(0.8, 1.) if max(text_img.shape) > 800 else np.random.uniform(0.8, 1.2)
         text_img = cv2.resize(text_img, None, fx=rands, fy=rands)
         h, w, _ = text_img.shape
         pick_test_w.append(w)

@@ -1,6 +1,13 @@
 # vertical-text-generator
 vertical text image generator from recognition dataset, bg_img is sampled from SynthText's background image list.
 
+# Snapshot
+
+| Mode | Example-1 | Example-2 | Example-3 |
+| --- | --- | --- | --- |
+| With text mask | ![](src/mask_1.jpg)    | ![](src/mask_2.jpg)    | ![](src/mask_3.jpg)    |
+| Without text mask       | ![](src/wo_mask_1.jpg) | ![](src/wo_mask_2.jpg) | ![](src/wo_mask_3.jpg) |
+
 # Requirement
 
 ```
